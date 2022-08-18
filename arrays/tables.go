@@ -1,15 +1,12 @@
 package arrays
 
-import (
-	"math/rand"
-)
+import "github.com/yersonargote/data-algo-golang/utils"
 
 func Fill(array []int) []int {
-	limit := 100
 	to := 10
 	array = make([]int, to)
 	for from := 0; from < to; from++ {
-		random := rand.Intn(limit)
+		random := utils.Random()
 		array[from] = random
 	}
 	return array

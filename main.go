@@ -15,4 +15,7 @@ func main() {
 
 	max = arrays.Max(scores)
 	fmt.Println(max)
+
+	numbers := arrays.FillList()
+	arrays.PrintList(numbers)
 }
